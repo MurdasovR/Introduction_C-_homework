@@ -4,8 +4,8 @@
 // 22 3 9 -> 22
 Console.Write("Введите три целых числа через пробел: ");
 string[] input = Console.ReadLine().Split();
-int[] a = new int[input.Length];
-for (int i=0; i < input.Length; i++)
+int[] a = new int[3];
+for (int i=0; i < 3; i++)
 {
     if (!(int.TryParse(input[i], out var num)))
     {Console.WriteLine("Ошибка ввода, попробуйте еще раз");
